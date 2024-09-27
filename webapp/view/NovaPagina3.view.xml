@@ -1,0 +1,46 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="locadora.sap.projetolocadorafiori.controller.NovaPagina3">
+
+    <Page title="MAGIC MUSIC | Acervo de músicas Online" titleAlignment="Center" class="fullScreenPage">
+        <Toolbar>
+            <ToolbarSpacer ></ToolbarSpacer>
+            <Button icon="sap-icon://home" tooltip="Início" press="onNavBack" type="Critical"/>
+            <Button icon="sap-icon://action-settings" tooltip="Configurações" press="onConfig" type="Critical"/>
+        </Toolbar>
+        <content>
+            <Panel headerText="Explore Gêneros" expandable="true" expanded="true">
+                <HBox justifyContent="SpaceAround">
+                    <Button text="Rock" type="Critical" icon="sap-icon://microphone" press="onRockPress" width="200px" />
+                    <Button text="Pop" type="Critical" icon="sap-icon://microphone" press="onPopPress" width="200px" />
+                    <Button text="Jazz" type="Critical" icon="sap-icon://microphone" press="onJazzPress" width="200px" />
+                    <Button text="Clássico" type="Critical" icon="sap-icon://microphone" press="onClassicPress" width="200px" />
+                </HBox>
+            </Panel>
+
+            <!-- Seção de Artistas Populares -->
+            <Panel headerText="Artistas Populares">
+                <List>
+                    <StandardListItem title="Artista 1" icon="path/to/artist1.jpg" press="onArtistPress" />
+                    <StandardListItem title="Artista 2" icon="path/to/artist2.jpg" press="onArtistPress" />
+                    <StandardListItem title="Artista 3" icon="path/to/artist3.jpg" press="onArtistPress" />
+                </List>
+            </Panel>
+
+            <!-- Seção de Novos Lançamentos -->
+            <Panel headerText="Novos Lançamentos">
+                <List>
+                    <ObjectListItem title="Álbum 1" number="2023" press="onAlbumPress" />
+                    <ObjectListItem title="Álbum 2" number="2023" press="onAlbumPress" />
+                </List>
+            </Panel>
+
+            <!-- Player de Música Fixo -->
+            <Toolbar>
+                <Button icon="sap-icon://media-play" press="onPlayPress" />
+                <Button icon="sap-icon://media-pause" press="onPausePress" />
+                <Slider width="100px" min="0" max="100" />
+                <Button icon="sap-icon://media-forward" press="onNextPress" />
+            </Toolbar>
+        </content>
+    </Page>
+
+</mvc:View>

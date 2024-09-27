@@ -1,0 +1,193 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="locadora.sap.projetolocadorafiori.controller.NovaPagina2">
+    <Page title="MAGIC LIVROS | Livraria e Biblioteca Online">
+        <Toolbar>
+            <ToolbarSpacer ></ToolbarSpacer>
+            <Button icon="sap-icon://home" tooltip="Início" press="onNavBack"/>
+            <Button icon="sap-icon://action-settings" tooltip="Configurações" press="onConfig"></Button>
+        </Toolbar>
+        <content>
+            <!-- Seção de Categorias -->
+            <Panel headerText="Categorias" expandable="true" expanded="true" class="TextTile2">
+                    <HBox justifyContent="Center" alignItems="Center">
+                        <Button text="Mangás" press="onCategoryPress1" class="classCarousel1" type="Emphasized"/>
+                        <Button text="Ficção"  press="onCategoryPress2" class="classCarousel1" type="Emphasized" />
+                        <Button text="Romance" press="onCategoryPress3" class="classCarousel1" type="Emphasized" />
+                        <Button text="Horror" press="onCategoryPress4" class="classCarousel1" type="Emphasized" />
+                        <Button text="Literatura" press="onCategoryPress5" class="classCarousel1" type="Emphasized" />
+                        <Button text="Quadrinhos" press="onCategoryPress6" class="classCarousel1" type="Emphasized" />
+                        <Button text="Autobiografias" press="onCategoryPress7" class="classCarousel1" type="Emphasized" />
+                    </HBox>
+            </Panel>
+
+            <!-- Seção de Destaques do mês -->
+            <Panel headerText="Destaques da MAGIC LIVROS" expandable="true" expanded="true" class="TextTile2">
+                <HBox alignItems="Center" justifyContent="Center">
+                    <VBox alignItems="Center" justifyContent="Center">
+                        <Carousel width="350px" height="350px" class="classCarousel" backgroundDesign="Transparent" loop="true">
+                                <Image src="https://pbs.twimg.com/media/F3bAITbXEAA0ZfM.jpg" />
+                                <Image src="https://comicvine.gamespot.com/a/uploads/scale_small/11161/111610434/9002817-6125859241-97840.jpg" />
+                                <Image src="https://m.media-amazon.com/images/I/61JOgQ4DbAL._AC_UF894,1000_QL80_.jpg" />
+                        </Carousel>
+                        <Text text="Animes" class="TextTile"/>
+                    </VBox>
+                
+                    <VBox alignItems="Center" justifyContent="Center">
+                        <Carousel width="350px" height="350px" class="classCarousel" backgroundDesign="Transparent" loop="true">
+                                <Image src="https://cdn.marvel.com/u/prod/marvel/i/mg/c/70/5cb736a3cdd49/clean.jpg" />
+                                <Image src="https://upload.wikimedia.org/wikipedia/en/c/cf/Crisis_on_Infinite_Earths_issue_1_cover.jpg" />
+                                <Image src="https://cdn.shopify.com/s/files/1/0552/2682/6930/products/STL228653.jpg?v=1656961106" />
+                        </Carousel>
+                        <Text text="Quadrinhos" class="TextTile"/>
+                    </VBox>
+
+                    <VBox alignItems="Center" justifyContent="Center">
+                        <Carousel width="350px" height="350px" class="classCarousel" backgroundDesign="Transparent" loop="true">
+                                <Image src="https://m.media-amazon.com/images/I/71ElBpqB2PL._AC_UF1000,1000_QL80_.jpg" />
+                                <Image src="https://m.media-amazon.com/images/I/811aRPxj9PL._AC_UF1000,1000_QL80_.jpg" />
+                                <Image src=""  />
+                        </Carousel>
+                        <Text text="Biografias" class="TextTile"/>
+                    </VBox>
+
+                </HBox>
+            </Panel>
+
+            <Panel headerText="Tópicos" expandable="true" expanded="true">
+                <headerToolbar>
+                    <Toolbar>
+                        <ToolbarSpacer />
+                        <HBox alignItems="Center" justifyContent="Center">
+                            <Text text="" class="customHeaderText" />
+                        </HBox>
+                        <ToolbarSpacer />
+                    </Toolbar>
+                </headerToolbar>  
+                <HBox alignItems="Center">
+                    <VBox justifyContent="Center" alignItems="Center">
+                        <Text text="TOP 10 - Mais vendidos de Agosto/2024" class="TextTile"></Text>
+                        <List id="bookList">
+                            <!-- Livros serão carregados dinamicamente -->
+                        </List>
+                    </VBox>
+
+                    <VBox justifyContent="Start" alignItems="Center">
+                        <Text text="Principais notícias sobre o mundo dos animes" class="TextTile"></Text>
+                        <List>
+                            <StandardListItem
+                                title="Jura - Saiba tudo sobre o novo vilão de Boruto: Two Blue Vortex - sequência direta de Boruto: Naruto Next Generations"
+                                description=""
+                                info="Hoje"
+                                infoState="Success"
+                                type="Navigation"
+                                press="onNewsPress1" />
+                            <StandardListItem
+                                title="Sensação do Momento"
+                                description="saiba mais..."
+                                info="Ontem"
+                                infoState="Success"
+                                type="Navigation"
+                                press="onNewsPress2" />
+                            <StandardListItem
+                                title="Proxímo Major de Counter-Strike 2"
+                                description="saiba mais..."
+                                info="25/08/2024"
+                                infoState="Success"
+                                type="Navigation"
+                                press="onNewsPress3" />
+                            <StandardListItem
+                                title="O novo e reformado sistema de campeonatos da Riot Games"
+                                description="saiba mais..."
+                                info="25/08/2024"
+                                infoState="Success"
+                                type="Navigation"
+                                press="onNewsPress4" />
+                            <StandardListItem
+                                title="O novo e reformado sistema de campeonatos da Riot Games"
+                                description="saiba mais..."
+                                info="23/08/2024"
+                                infoState="Success"
+                                type="Navigation"
+                                press="onNewsPress5" />
+                            <StandardListItem
+                                title="O novo e reformado sistema de campeonatos da Riot Games"
+                                description="saiba mais..."
+                                info="21/08/2024"
+                                infoState="Success"
+                                type="Navigation"
+                                press="onNewsPress6" />
+                            <StandardListItem
+                                title="O novo e reformado sistema de campeonatos da Riot Games"
+                                description="saiba mais..."
+                                info="21/08/2024"
+                                infoState="Success"
+                                type="Navigation"
+                                press="onNewsPress7" />
+                            <StandardListItem
+                                title="O novo e reformado sistema de campeonatos da Riot Games"
+                                description="saiba mais..."
+                                info="15/08/2024"
+                                infoState="Success"
+                                type="Navigation"
+                                press="onNewsPress8" />
+                            <StandardListItem
+                                title="O novo e reformado sistema de campeonatos da Riot Games"
+                                description="saiba mais..."
+                                info="Está mês"
+                                infoState="Success"
+                                type="Navigation"
+                                press="onNewsPress9" />
+                            <StandardListItem
+                                title="O novo e reformado sistema de campeonatos da Riot Games"
+                                description="saiba mais..."
+                                info="Este mês"
+                                infoState="Success"
+                                type="Navigation"
+                                press="onNewsPress1o" />
+                        </List>
+                    </VBox>
+                </HBox>
+            </Panel>
+
+            <Panel headerText="Mande-nos a sua opnião ou contate a nós">
+                <VBox justifyContent="Center"
+                        alignItems="Center"
+                        wrap="Wrap"
+                        height="100px">
+                    <TextArea id="txtFeedBack1" placeholder="Escreva aqui seu feedback..." width="300px"/>
+                    <Button text="Enviar" icon="sap-icon://paper-plane" width="250px" type="Reject" />
+                    <ToolbarSpacer></ToolbarSpacer>
+                    <HBox justifyContent="Center" 
+                        alignItems="Center">
+                        <ImageContent
+                            src="https://static.vecteezy.com/system/resources/previews/018/930/415/non_2x/instagram-logo-instagram-icon-transparent-free-png.png"
+                            description="Instagram"
+                            press="pressInsta"
+                            class="imageclass">
+                        </ImageContent>
+                        <ImageContent
+                            src="https://static.vecteezy.com/system/resources/previews/018/930/698/non_2x/facebook-logo-facebook-icon-transparent-free-png.png"
+                            description="Facebook"
+                            press="pressFace"
+                            class="imageclass">
+                        </ImageContent>
+                        <ImageContent
+                            src="https://static.vecteezy.com/system/resources/previews/042/148/611/non_2x/new-twitter-x-logo-twitter-icon-x-social-media-icon-free-png.png"
+                            description="X"
+                            press="pressX"
+                            class="imageclass">
+                        </ImageContent>
+                    </HBox>
+                </VBox>
+            </Panel>
+
+            <Bar design="Footer">
+                <contentMiddle>
+                    <Text text="© 2024 Magic Games"/>
+                    <Link text="Termos de Serviço"/>
+                    <Link text="Suporte"/>
+                </contentMiddle>
+            </Bar>
+
+        </content>
+    </Page>
+</mvc:View>

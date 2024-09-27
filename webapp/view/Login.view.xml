@@ -1,0 +1,13 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="locadora.sap.projetolocadorafiori.controller.Login">
+    <App>
+        <pages>
+            <Page title="Login">
+                <content>
+                    <Input id="usernameInput" placeholder="Nome de Usuário" />
+                    <Input id="passwordInput" type="Password" placeholder="Senha" />
+                    <Button text="Entrar" press="onLoginPress" />
+                </content>
+            </Page>
+        </pages>
+    </App>
+</mvc:View>

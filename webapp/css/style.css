@@ -1,0 +1,258 @@
+.fullScreenPage {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cinemaScreen {
+    border-top: 2px solid #000;
+    padding-top: 5px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.myCustomInput {
+    text-align: center; /* Centraliza o texto dentro do input */
+    border-radius: 20px; /* Define o raio das bordas arredondadas */
+}
+
+.movieListItem {
+    width: 200px;
+    margin: 10px;
+}
+
+.movieImage {
+    width: 200px;
+    height: 275px;
+}
+
+.boldText {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.TextTile {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.TextTile2 .sapMGTheaderText {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+.horarioText {
+    color: #007AFF; /* Cor azul, você pode mudar para a cor desejada */
+}
+
+.customHeaderText {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 24px; /* Ajuste o tamanho da fonte conforme necessário */
+}
+
+.filtroText {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 12px; /* Ajuste o tamanho da fonte conforme necessário */
+}
+
+.customIcon {
+    margin-left: 8px; /* Espaço entre o texto e o ícone */
+}
+
+.customIcon2 {
+    margin-top: 4px;
+    margin-left: 4px; /* Espaço entre o texto e o ícone */
+    margin-right: 4px;
+    margin-bottom: 10px;
+    color: #33b0f8;
+    padding: 10px;
+    cursor: pointer; /* Cursor de ponteiro para indicar clicável */
+    transition: background-color 0.3s; /* Efeito de transição */
+    border: 1px solid #b3e3ff; /* Borda do ícone */
+    border-radius: 4px; /* Cantos arredondados */
+    border-style: hidden;
+}
+
+.customIcon2:hover {
+    
+    background-color: #b3e3ff; /* Cor de fundo ao passar o mouse */
+    border: 1px solid #b3e3ff; /* Borda do ícone */
+    border-radius: 4px; /* Cantos arredondados */
+}
+
+.customIconConfig {
+    margin-right: 8px; /* Espaço entre o texto e o ícone */
+}
+
+.customIconFilter {
+    margin-right: 4px; /* Espaço entre o texto e o ícone */
+}
+
+.imageclass {
+    width: 25px;
+    height: 25px;
+    margin: 12px;
+}
+
+.customTile1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.288), rgba(0, 0, 0, 0.288)), 
+                url("https://image.api.playstation.com/vulcan/ap/rnd/202207/1210/4xJ8XB3bi888QTLZYdl7Oi0s.png");
+    background-size: contain;
+    background-position: center;
+    margin: 10px;
+    transition: transform 0.2s;
+}
+
+.customTile1 .sapMGTHeader, .customTile1 .sapMGTSubHdr {
+    color: rgb(255, 255, 255);  /* Destaca o texto */
+    font-weight: bold;
+}
+
+.customTile2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.288), rgba(0, 0, 0, 0.288)), 
+                url("https://image.api.playstation.com/cdn/UP1004/CUSA03041_00/Hpl5MtwQgOVF9vJqlfui6SDB5Jl4oBSq.png");
+    background-size: contain;
+    background-position: center;
+    margin: 10px;
+    transition: transform 0.2s;
+}
+
+.customTile2 .sapMGTHeader, .customTile2 .sapMGTSubHdr {
+    color: rgb(255, 255, 255);  /* Destaca o texto */
+    font-weight: bold;
+}
+
+.customTile3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.288), rgba(0, 0, 0, 0.288)), 
+                url("https://media-rockstargames-com.akamaized.net/seis-8878371b7eac6fbe31244d4cfde113a7f532fdb5727e70ceeaf8b3c73eca808f/meta/800x800.jpg");
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    margin: 10px;
+    transition: transform 0.2s;
+}
+
+.customTile3 .sapMGTHeader, .customTile3 .sapMGTSubHdr {
+    color: rgb(255, 255, 255);  /* Destaca o texto */
+    font-weight: bold;
+}
+
+.customTile4 {
+    background: linear-gradient(rgba(0, 0, 0, 0.288), rgba(0, 0, 0, 0.288)), 
+                url("https://image.api.playstation.com/vulcan/ap/rnd/202405/2122/ac63f546eed35848f4a155a9fa9ee64f0bcd7b2a175dbd78.png");
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    margin: 10px;
+    transition: transform 0.2s;
+}
+
+.customTile4 .sapMGTHeader, .customTile4 .sapMGTSubHdr {
+    color: rgb(255, 255, 255);  /* Destaca o texto */
+    font-weight: bold;
+}
+
+.customTile6 {
+    background: linear-gradient(rgba(0, 0, 0, 0.288), rgba(0, 0, 0, 0.288)), 
+                url("https://flowgames.gg/wp-content/uploads/2024/07/ea-sports-fc-25-logo.jpg");
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    margin: 10px;
+    transition: transform 0.2s;
+}
+
+.customTile6 .sapMGTHeader, .customTile6 .sapMGTSubHdr {
+    color: rgb(255, 255, 255);  /* Destaca o texto */
+    font-weight: bold;
+}
+
+.customTile7 {
+    background: linear-gradient(rgba(0, 0, 0, 0.288), rgba(0, 0, 0, 0.288)), 
+                url("https://image.api.playstation.com/vulcan/ap/rnd/202407/0401/670c294ded3baf4fa11068db2ec6758c63f7daeb266a35a1.png");
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    margin: 10px;
+    transition: transform 0.2s;
+}
+
+.customTile7 .sapMGTHeader, .customTile7 .sapMGTSubHdr {
+    color: rgb(255, 255, 255);  /* Destaca o texto */
+    font-weight: bold;
+}
+
+.classXbox {
+    background: url("https://observatoriodegames.uol.com.br/wp-content/uploads/2024/04/logo-xbox-1024x768.png");
+    background-size: contain;
+    background-position: center;
+    transition: transform 0.2s;
+    width: 200px;  /* Ajuste a largura conforme necessário */
+    height: 200px; /* Ajuste a altura conforme necessário  */
+    margin: 10px;  /* Espaçamento entre os tiles           */
+}
+
+.classPS5 {
+    background: url("https://static.cdnlogo.com/logos/p/43/ps5-8211-playstation-5.png");
+    background-color: white;
+    background-size: contain;
+    background-position: center;
+    transition: transform 0.2s;
+    width: 200px;  /* Ajuste a largura conforme necessário */
+    height: 200px; /* Ajuste a altura conforme necessário  */
+    margin: 10px;  /* Espaçamento entre os tiles           */
+}
+
+.classNintendo {
+    background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Nintendo_Switch_logo.svg/640px-Nintendo_Switch_logo.svg.png");
+    background-size: contain;
+    background-position: center;
+    transition: transform 0.2s;
+    width: 200px;  /* Ajuste a largura conforme necessário */
+    height: 200px; /* Ajuste a altura conforme necessário  */
+    margin: 10px;  /* Espaçamento entre os tiles           */
+}
+
+.classPC {
+    background: url("https://cdn.icon-icons.com/icons2/2845/PNG/512/steam_logo_icon_181402.png");
+    background-color: rgb(0, 0, 69);
+    background-size: contain;
+    background-position: center;
+    transition: transform 0.2s;
+    width: 200px;  /* Ajuste a largura conforme necessário */
+    height: 200px; /* Ajuste a altura conforme necessário  */
+    margin: 10px;  /* Espaçamento entre os tiles           */
+}
+
+.classXbox:hover, .classPS5:hover, .classNintendo:hover, .classPC:hover {
+    transform: scale(1.05); /* Efeito de zoom suave ao passar o mouse */
+    background-size: cover; /* Mantém o tamanho do background */
+    background-position: center; /* Mantém o background centralizado */
+    box-shadow: 0px 4px 8px rgb(0, 0, 0); /* Adiciona uma sombra */
+}
+
+.customTile1:hover, .customTile2:hover, .customTile3:hover, .customTile4:hover, .customTile5:hover, .customTile6:hover, .customTile7:hover {
+    transform: scale(1.05); /* Efeito de zoom suave ao passar o mouse */
+    background-size: cover; /* Mantém o tamanho do background */
+    background-position: center; /* Mantém o background centralizado */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0); /* Adiciona uma sombra */
+}
+
+.classCarousel {
+    margin: 15px;
+}
+
+.classCarousel1 {
+    margin: 15px;       /* Espaçamento entre os tiles  */
+    width: 130px;       /* Define a largura do botão   */
+    height: 40px;       /* Define a altura do botão    */
+    padding: 1rem 2rem; /* Padding ajustado com unidades relativas */
+    font-size: 1.5rem;  /* Tamanho da fonte ajustado   */
+}

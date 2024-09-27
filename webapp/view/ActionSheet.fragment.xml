@@ -1,0 +1,12 @@
+<ActionSheet id="actionSheet"
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	core:require="{ MessageToast: 'sap/m/MessageToast' }"
+	title="Escolha a Atividade"
+	showCancelButton="true"
+	placement="Horizontal">
+	 <Button text="Inserir Filme" type="Neutral" icon="sap-icon://video" press="addMovie" width="200px"></Button>
+     <Button text="Remover Filme" press="onDeleteItem" type="Neutral" icon="sap-icon://sys-cancel" width="200px"/>
+     <Button text="Devolver Filme" press="onDevolver" type="Neutral" icon="sap-icon://undo" enabled="true" width="200px"/>
+     <Button text="Filtrar Filmes" press="onFilterDialog" type="Neutral" icon="sap-icon://filter" width="200px" />
+</ActionSheet>

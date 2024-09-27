@@ -1,0 +1,202 @@
+<mvc:View xmlns:core="sap.ui.core" controllerName="locadora.sap.projetolocadorafiori.controller.LocadoraView"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page title="MAGIC MOVIES | Locadora e Ingressos Online" titleAlignment="Center" class="fullScreenPage">
+      <Toolbar>
+        <ToolbarSpacer ></ToolbarSpacer>
+        <Button
+          icon="sap-icon://add-activity"
+          text="Nova Atividade"
+          class="sapUiSmallMargin"
+          press=".onButtonPress"
+          ariaHasPopup="Menu" >
+          <dependents>
+            <core:Fragment
+              fragmentName="locadora.sap.projetolocadorafiori.view.ActionSheet"
+              type="XML" />
+          </dependents>
+        </Button>
+        <Button icon="sap-icon://action-settings" tooltip="Configurações" press="onConfig"></Button>
+        <Button icon="sap-icon://clear-filter" press="onRemoveFilter"/>
+      </Toolbar>
+        <Panel headerText="Filmes em exibição nos cinemas" expandable="true" expanded="true">
+          <ScrollContainer horizontal="true" height="380px">
+            <content>
+              <FlexBox justifyContent="SpaceAround">
+                <items>
+
+                  <CustomListItem class="movieListItem">
+                    <VBox alignItems="Center">
+                      <Image src="{/movies/0/image}" class="movieImage"/>
+                      <Text text="{/movies/0/title}" maxLines="2" />
+                        <HBox alignContent="Center" alignItems="Center">
+                          <core:Icon src="sap-icon://time-entry-request" size="20px" press="sections" tooltip="Sessões Disponíveis" class="customIcon2"/>
+                          <core:Icon src="sap-icon://lead" press="onTicketsPress" size="20px" tooltip="Comprar Ingressos" class="customIcon2"></core:Icon>
+                          <core:Icon src="sap-icon://detail-view" press="more0" size="20px" tooltip="Sinopse do Filme" class="customIcon2"></core:Icon>
+                        </HBox>
+                    </VBox>
+                  </CustomListItem>
+
+                  <CustomListItem class="movieListItem">
+                    <VBox alignItems="Center">
+                      <Image src="{/movies/1/image}" class="movieImage"/>
+                      <Text text="{/movies/1/title}" maxLines="2" />
+                      <HBox alignContent="Center" alignItems="Center">
+                          <core:Icon src="sap-icon://time-entry-request" size="20px" press="sections" tooltip="Sessões Disponíveis" class="customIcon2"/>
+                          <core:Icon src="sap-icon://lead" press="onTicketsPress" size="20px" tooltip="Comprar Ingressos" class="customIcon2"></core:Icon>
+                          <core:Icon src="sap-icon://detail-view" press="more1" size="20px" tooltip="Sinopse do Filme" class="customIcon2"></core:Icon>
+                      </HBox>
+                    </VBox>
+                  </CustomListItem>
+
+                  <CustomListItem class="movieListItem">
+                    <VBox alignItems="Center">
+                      <Image src="{/movies/2/image}" class="movieImage"/>
+                      <Text text="{/movies/2/title}" maxLines="2" />
+                      <HBox alignContent="Center" alignItems="Center">
+                          <core:Icon src="sap-icon://time-entry-request" size="20px" press="sections" tooltip="Sessões Disponíveis" class="customIcon2"/>
+                          <core:Icon src="sap-icon://lead" press="onTicketsPress" size="20px" tooltip="Comprar Ingressos" class="customIcon2"></core:Icon>
+                          <core:Icon src="sap-icon://detail-view" press="more2" size="20px" tooltip="Sinopse do Filme" class="customIcon2"></core:Icon>
+                      </HBox>
+                    </VBox>
+                  </CustomListItem>
+
+                  <CustomListItem class="movieListItem">
+                    <VBox alignItems="Center">
+                      <Image src="{/movies/3/image}" class="movieImage"/>
+                      <Text text="{/movies/3/title}" maxLines="2" />
+                      <HBox alignContent="Center" alignItems="Center">
+                          <core:Icon src="sap-icon://time-entry-request" size="20px" press="sections" tooltip="Sessões Disponíveis" class="customIcon2"/>
+                          <core:Icon src="sap-icon://lead" press="onTicketsPress" size="20px" tooltip="Comprar Ingressos" class="customIcon2"></core:Icon>
+                          <core:Icon src="sap-icon://detail-view" press="more3" size="20px" tooltip="Sinopse do Filme" class="customIcon2"></core:Icon>
+                      </HBox>
+                    </VBox>
+                  </CustomListItem>
+
+                  <CustomListItem class="movieListItem">
+                    <VBox alignItems="Center">
+                      <Image src="{/movies/4/image}" class="movieImage"/>
+                      <Text text="{/movies/4/title}" maxLines="2" />
+                      <HBox alignContent="Center" alignItems="Center">
+                          <core:Icon src="sap-icon://time-entry-request" size="20px" press="sections" tooltip="Sessões Disponíveis" class="customIcon2"/>
+                          <core:Icon src="sap-icon://lead" press="onTicketsPress" size="20px" tooltip="Comprar Ingressos" class="customIcon2"></core:Icon>
+                          <core:Icon src="sap-icon://detail-view" press="more4" size="20px" tooltip="Sinopse do Filme" class="customIcon2"></core:Icon>
+                      </HBox>
+                    </VBox>
+                  </CustomListItem>
+
+                  <CustomListItem class="movieListItem">
+                    <VBox alignItems="Center">
+                      <Image src="{/movies/5/image}" class="movieImage"/>
+                      <Text text="{/movies/5/title}" maxLines="2" />
+                      <HBox alignContent="Center" alignItems="Center">
+                          <core:Icon src="sap-icon://time-entry-request" size="20px" press="sections" tooltip="Sessões Disponíveis" class="customIcon2"/>
+                          <core:Icon src="sap-icon://lead" press="onTicketsPress" size="20px" tooltip="Comprar Ingressos" class="customIcon2"></core:Icon>
+                          <core:Icon src="sap-icon://detail-view" press="more5" size="20px" tooltip="Sinopse do Filme" class="customIcon2"></core:Icon>
+                      </HBox>
+                    </VBox>
+                  </CustomListItem>
+
+                  <CustomListItem class="movieListItem">
+                    <VBox alignItems="Center">
+                      <Image src="{/movies/6/image}" class="movieImage"/>
+                      <Text text="{/movies/6/title}" maxLines="2" />
+                      <HBox alignContent="Center" alignItems="Center">
+                          <core:Icon src="sap-icon://time-entry-request" size="20px" press="sections" tooltip="Sessões Disponíveis" class="customIcon2"/>
+                          <core:Icon src="sap-icon://lead" press="onTicketsPress" size="20px" tooltip="Comprar Ingressos" class="customIcon2"></core:Icon>
+                          <core:Icon src="sap-icon://detail-view" press="more6" size="20px" tooltip="Sinopse do Filme" class="customIcon2"></core:Icon>
+                      </HBox>
+                    </VBox>
+                  </CustomListItem>
+
+                  <CustomListItem class="movieListItem">
+                    <VBox alignItems="Center">
+                      <Image src="{/movies/7/image}" class="movieImage"/>
+                      <Text text="{/movies/7/title}" maxLines="2" />
+                      <HBox alignContent="Center" alignItems="Center">
+                          <core:Icon src="sap-icon://time-entry-request" size="20px" press="sections" tooltip="Sessões Disponíveis" class="customIcon2"/>
+                          <core:Icon src="sap-icon://lead" press="onTicketsPress" size="20px" tooltip="Comprar Ingressos" class="customIcon2"></core:Icon>
+                          <core:Icon src="sap-icon://detail-view" press="more7" size="20px" tooltip="Sinopse do Filme" class="customIcon2"></core:Icon>
+                      </HBox>
+                    </VBox>
+                  </CustomListItem>
+                  
+                </items>
+              </FlexBox>
+            </content>
+          </ScrollContainer>
+        </Panel>
+
+    <content>
+    <Panel headerText="Catálago de Filmes" expandable="true" expanded="true">
+      <Table id="TabelaControle" items="{/data}" noDataText="Nenhum filme encontrado!" mode="MultiSelect" itemPress="onItemPress">
+            <headerToolbar>
+              <Toolbar>
+                <ToolbarSpacer />
+                  <HBox alignItems="Center" justifyContent="Center">
+                    <Text text="MAGIC FILMES" class="customHeaderText" />
+                    <core:Icon src="sap-icon://video" size="25px" class="customIcon"/>
+                  </HBox>
+                <ToolbarSpacer />
+              </Toolbar>
+            </headerToolbar>       
+        <columns>
+          <Column hAlign="Center" vAlign="Middle">
+            <Text text="Nome do Filme"/>
+          </Column>
+          <Column hAlign="Center" vAlign="Middle">
+            <Text text="Categoria"/>
+          </Column>
+          <Column hAlign="Center" vAlign="Middle">
+            <Text text="Duração"/>
+          </Column >
+          <Column hAlign="Center" vAlign="Middle">
+            <Text text="Classificação Indicatíva"/>
+          </Column>
+          <Column hAlign="Center" vAlign="Middle">
+              <Text text="Streaming" />
+          </Column>
+          <Column hAlign="Center" vAlign="Middle">
+              <Text text="Ações" />
+          </Column>
+          <Column hAlign="Center" vAlign="Middle">
+              <Text text="Status" />
+          </Column>
+        </columns>
+        <items>
+          <ColumnListItem>
+            <cells>
+              <Text text="{column1}" class="boldText" />
+              <Text text="{column2}" class="boldText" />
+              <Text text="{column3}" class="boldText" />
+              <Text text="{column4}" class="boldText" />
+               <VBox alignItems="Center">
+                  <Button text="Onde Assistir" type="Ghost" icon="sap-icon://internet-browser" press="onStream">
+                        <customData>
+                            <core:CustomData key="streamingUrl" value="{streamingUrl}"/>
+                        </customData>
+                  </Button>
+              </VBox>
+              <VBox alignItems="Center">
+                  <Button text="Alugar" id="idAlugar" press="onAlugar" type="Ghost" icon="sap-icon://bookmark" enabled="{enabledAlugar}"/>
+              </VBox>
+              <ObjectStatus text="{column5}" class="boldText" state="{= ${column5} === 'Disponível' ? 'Success' : 'Error' }" icon="{= ${column5} === 'Disponível' ? 'sap-icon://message-success' : 'sap-icon://locked' }"/>
+            </cells>
+          </ColumnListItem>
+        </items>
+      </Table>
+    </Panel>
+    </content>
+    <footer>
+      <Toolbar design="Auto" id="footerBar" visible="true">
+          <content>
+            <ToolbarSpacer ></ToolbarSpacer>
+            <Button icon="sap-icon://keyboard-and-mouse" text="MAGIC GAMES"  press="onNavButtonPress1" type="Emphasized" width="200px"/>
+            <Button icon="sap-icon://course-book"        text="MAGIC LIVROS" press="onNavButtonPress2" type="Emphasized" width="200px" />
+            <Button icon="sap-icon://sound-loud"         text="MAGIC MUSIC"  press="onNavButtonPress3" type="Emphasized" width="200px" />
+            <ToolbarSpacer ></ToolbarSpacer>
+          </content>
+        </Toolbar>
+    </footer>
+  </Page>
+</mvc:View>

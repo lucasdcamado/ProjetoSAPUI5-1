@@ -1,0 +1,35 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout.form">
+    <Dialog id="dialogPS5" title="Catálago Playstation 5" type="Message" draggable="true" titleAlignment="Center" 
+    contentWidth="500px"
+    contentHeight="400px"
+    afterClose="onDialogPS5Close">
+        <content>
+            <Table id="PS5Table" inset="false">
+                <columns>
+                    <Column>
+                        <Text text="Nome do Jogo" />
+                    </Column>
+                    <Column>
+                        <Text text="Preço" />
+                    </Column>
+                    <Column>
+                        <Text text="Data de Lançamento" />
+                    </Column>
+                </columns>
+                <items>
+                    <!-- Os itens da tabela serão carregados dinamicamente -->
+                    <ColumnListItem>
+                        <cells>
+                            <Text text="{name}" />
+                            <Text text="{price}" />
+                            <Text text="{releaseDate}" />
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+        <endButton>
+            <Button text="Fechar" press="onDialogPS5Close" />
+        </endButton>
+    </Dialog>
+</core:FragmentDefinition>

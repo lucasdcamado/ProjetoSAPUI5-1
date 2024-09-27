@@ -1,0 +1,30 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout.form">
+  <Dialog id="dialogAdd" title="Inserir Filme" type="Message" draggable="true" titleAlignment="Center">
+        <content>
+      <VBox>
+        <HBox>
+        <l:SimpleForm id="formAdd">
+          <Label text="Nome"></Label>
+          <Input id="inputNome" placeholder="Insira o Nome do Filme" />
+
+          <Label text="Categoria"></Label>
+          <Input id="inputCategoria" placeholder="Insira a Categoria" />
+
+          <Label text="Duração"></Label>
+          <Input id="inputDuracao" placeholder="Insira a Duração" />
+
+          <Label text="Idade"></Label>
+          <Input id="inputIdade" placeholder="Insira a Idade Sugerida" />
+
+          <Label text="Streaming"></Label>
+          <Input id="inputStream" placeholder="Insira o link do streaming." />
+
+          <Button text="Adicionar Filme" type="Success" press="onAddItem" icon="sap-icon://add"/>
+          <Button text="Voltar" type="Negative" press="onVoltar" icon="sap-icon://undo"/>
+        </l:SimpleForm>
+              
+        </HBox>
+      </VBox>
+    </content>
+  </Dialog>
+</core:FragmentDefinition>

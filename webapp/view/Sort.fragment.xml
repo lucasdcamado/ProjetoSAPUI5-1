@@ -1,0 +1,31 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+
+    <Dialog id="dialogFilter" title="Filtros" type="Standard" draggable="true" titleAlignment="Center">
+        <VBox alignContent="Center" alignItems="Center">
+                <HBox alignContent="Center" alignItems="Center">
+                    <Text text="Categoria: " class="boldText"></Text>
+                    <Select id="selectCategory" textAlign="Center" width="150px">
+                        <items>
+                            <core:Item key="" text=""/>
+                            <core:Item key="Marvel" text="Marvel" />
+                            <core:Item key="DC Comics" text="DC Comics" />
+                            <core:Item key="Crime" text="Crime" />
+                            <core:Item key="Animação" text="Animação" />
+                            <core:Item key="Ação" text="Ação" />
+                            <core:Item key="Drama" text="Drama" />
+                            <core:Item key="Fantasia" text="Fantasia" />
+                            <core:Item key="Comédia" text="Comédia" />
+                            <core:Item key="Romance" text="Romance" />
+                            <core:Item key="Ficção Científica" text="Ficção Científica" />
+                            <!-- Adicione mais categorias conforme necessário -->
+                        </items>
+                    </Select>
+                </HBox>
+        </VBox>
+        <buttons>
+            <Button text="OK" press="onFilterConfirm" />
+            <Button text="Cancelar" press="onVoltar3" />
+        </buttons>
+    </Dialog>
+
+</core:FragmentDefinition>

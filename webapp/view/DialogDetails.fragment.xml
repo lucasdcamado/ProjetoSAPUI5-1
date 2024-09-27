@@ -1,0 +1,18 @@
+<Dialog id="dialogDetails" title="Detalhes do Filme" contentWidth="400px" contentHeight="300px" class="sapUiResponsivePadding" draggable="true" resizable="true">
+    <content>
+        <VBox>
+            <Text text="Nome do Filme:" class="sapUiSmallMarginBottom" />
+            <Text text="{selectedRow>/column1}" class="sapUiSmallMarginBottom" />
+            <Text text="Categoria:" class="sapUiSmallMarginBottom" />
+            <Text text="{selectedRow>/column2}" class="sapUiSmallMarginBottom" />
+            <Text text="Duração:" class="sapUiSmallMarginBottom" />
+            <Text text="{selectedRow>/column3}" class="sapUiSmallMarginBottom" />
+            <Text text="Classificação Indicativa:" class="sapUiSmallMarginBottom" />
+            <Text text="{selectedRow>/column4}" class="sapUiSmallMarginBottom" />
+            <!-- Adicione mais detalhes conforme necessário -->
+        </VBox>
+    </content>
+    <beginButton>
+        <Button text="Fechar" press="onCloseDialog" />
+    </beginButton>
+</Dialog>

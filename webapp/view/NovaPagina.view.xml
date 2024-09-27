@@ -1,0 +1,127 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="locadora.sap.projetolocadorafiori.controller.NovaPagina">
+    <Page title="MAGIC GAMES | Tudo sobre o mundo dos Games" titleAlignment="Center" class="fullScreenPage">
+         <headerContent>
+            <Button icon="sap-icon://home" tooltip="Início" press="onNavBack"/>
+            <Button icon="sap-icon://action-settings" tooltip="Configurações" press="onConfig"></Button>
+            <!-- Mais botões de navegação se necessário -->
+        </headerContent>
+
+     <Panel headerText="Catálagos por Plataformas" expandable="true" expanded="true">
+        <FlexBox justifyContent="Center"
+                 alignItems="Center"
+                 wrap="Wrap"
+                 height="300px">
+            <items>
+                <VBox alignItems="Center">
+                <GenericTile class="classXbox" press="tileXbox" />
+                <Text text="Xbox Series X" class="TextTile"/>
+                </VBox>
+                <VBox alignItems="Center">
+                    <GenericTile class="classPS5" press="tilePS5" />
+                    <Text text="PlayStation 5" class="TextTile" />
+                </VBox>
+                <VBox alignItems="Center">
+                    <GenericTile class="classNintendo" press="tileNintendo"/>
+                    <Text text="Nintendo Switch" class="TextTile"/>
+                </VBox>
+                <VBox alignItems="Center">
+                    <GenericTile class="classPC" press="tileSteam"/>
+                    <Text text="Steam" class="TextTile" />
+                </VBox>
+            </items>
+        </FlexBox>
+    </Panel>
+    
+
+    <Panel headerText="Jogos da Semana" expandable="true" expanded="true">
+        <FlexBox justifyContent="Center"
+                 alignItems="Center"
+                 wrap="Wrap"
+                 height="250px">
+            <items>
+                <GenericTile header="God Of War: Ragnarok"  subheader="PS4/PS5"              class="customTile1" press="tile1"/>
+                <GenericTile header="Red Dead Redemption 2" subheader="PS4/PS5"              class="customTile2" press="tile2"/>
+                <GenericTile header="Grand Theft Auto VI"   subheader="PS5/Xbox Series X/PC" class="customTile3" press="tile3"/>
+                <GenericTile header="Black Myth: Wukong"    subheader="PS5/Xbox Series X/PC" class="customTile4" press="tile4"/>
+                <GenericTile header="EA FC 2025"            subheader="PS5/Xbox Series X/PC" class="customTile6" press="tile6"/>
+                <GenericTile header="Minecraft"             subheader="PS5/Xbox Series X/PC" class="customTile7" press="tile7"/>
+            </items>
+        </FlexBox>
+    </Panel>
+
+
+    <Panel headerText="Últimas Notícias do Mundo dos Games" expandable="true" expanded="true">
+        <List>
+            <StandardListItem
+                title="Mais novidades sobre o proximo grande jogo da Marvel"
+                description="Marvel's Wolverine, o próximo grande lançamento da Marvel depois de Spider-Man 2 promete grande expectativa nos fãs! - saiba mais..."
+                info="Hoje"
+                infoState="Success"
+                type="Navigation"
+                press="onNewsPress1" />
+            <StandardListItem
+                title="Sensação do Momento"
+                description="Black Myth: Wukong ja é um sucesso, o jogo já um dos mais vendidos da Steam, Nos primeiros três dias após o lançamento, foram vendidas 10 milhões de cópias - saiba mais..."
+                info="Ontem"
+                infoState="Success"
+                type="Navigation"
+                press="onNewsPress2" />
+            <StandardListItem
+                title="Proxímo Major de Counter-Strike 2"
+                description="O Perfect World Shanghai 2024 está mais proximo do que nunca, os qualificatórios começam essa semana! - saiba mais..."
+                info="Está semana"
+                infoState="Success"
+                type="Navigation"
+                press="onNewsPress3" />
+            <StandardListItem
+                title="O novo e reformado sistema de campeonatos da Riot Games"
+                description="A Riot Games está mudando seus campeonatos de League of Legends, as franquias estão sendo adotadas - saiba mais..."
+                info="Está semana"
+                infoState="Success"
+                type="Navigation"
+                press="onNewsPress4" />
+            <!-- Adicione mais notícias conforme necessário -->
+        </List>
+    </Panel>
+
+    <Panel headerText="Mande-nos a sua opnião ou contate a nós">
+        <VBox justifyContent="Center"
+                 alignItems="Center"
+                 wrap="Wrap"
+                 height="100px">
+            <TextArea id="txtFeedBack" placeholder="Escreva aqui seu feedback..." width="300px"/>
+            <Button text="Enviar" icon="sap-icon://paper-plane" width="250px" />
+            <ToolbarSpacer></ToolbarSpacer>
+            <HBox justifyContent="Center" 
+                  alignItems="Center">
+                <ImageContent
+                    src="https://static.vecteezy.com/system/resources/previews/018/930/415/non_2x/instagram-logo-instagram-icon-transparent-free-png.png"
+                    description="Instagram"
+                    press="pressInsta"
+                    class="imageclass">
+                </ImageContent>
+                <ImageContent
+                    src="https://static.vecteezy.com/system/resources/previews/018/930/698/non_2x/facebook-logo-facebook-icon-transparent-free-png.png"
+                    description="Facebook"
+                    press="pressFace"
+                    class="imageclass">
+                </ImageContent>
+                <ImageContent
+                    src="https://static.vecteezy.com/system/resources/previews/042/148/611/non_2x/new-twitter-x-logo-twitter-icon-x-social-media-icon-free-png.png"
+                    description="X"
+                    press="pressX"
+                    class="imageclass">
+                </ImageContent>
+            </HBox>
+        </VBox>
+    </Panel>
+
+     <Bar design="Footer">
+        <contentMiddle>
+            <Text text="© 2024 Magic Games"/>
+            <Link text="Termos de Serviço"/>
+            <Link text="Suporte"/>
+        </contentMiddle>
+     </Bar>
+    </Page>
+</mvc:View>
